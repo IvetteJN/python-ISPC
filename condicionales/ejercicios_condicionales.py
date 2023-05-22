@@ -61,27 +61,113 @@
 
 # Ejercicios estructura condicional compuesto (IF anidados)
 # 1. Introducir los lados de un triángulo y visualizar por pantalla si dicho triángulo es equilátero, isósceles o escaleno.
-lado1 = input("Ingrese la medida de un lado: ")
-lado2 = input("Ingrese la medida del otro lado: ")
-lado3 = input("Ingrese la medida del tercer lado: ")
+# lado1 = input("Ingrese la medida de un lado: ")
+# lado2 = input("Ingrese la medida del otro lado: ")
+# lado3 = input("Ingrese la medida del tercer lado: ")
 
-if lado1 == lado2 == lado3:
-    print("El triángulo es equilátero.")
-elif (lado1 == lado2) or (lado1 == lado3) or (lado2 == lado3):
-    print("El triángulo es isósceles.")
-else:
-    print("El triángulo es escaleno.")
+# if lado1 == lado2 == lado3:
+#     print("El triángulo es equilátero.")
+# elif (lado1 == lado2) or (lado1 == lado3) or (lado2 == lado3):
+#     print("El triángulo es isósceles.")
+# else:
+#     print("El triángulo es escaleno.")
 
 
-# 2. Realice un programa que le permita al usuario simular el pago
-# ingresando el importe y la forma de pago:
+# 2. Realice un programa que le permita al usuario simular el pago ingresando el importe y la forma de pago:
 # • Contado (1): se aplica un descuento del 10% al importe
 # • Tarjeta (2): se aplica un interés de 10%
 # • Débito (3): se aplica un descuento del 5%
 # Mostrar el importe, el descuento o interés y el importe total.
-# 3. Realice un programa que lea tres números, muestre cuál es el mayor y
-# determine si es par o impar.
-# 4. Confeccione un programa que pida un número del 1 al 7 y diga el día de
-# la semana correspondiente.
-# 5. Realice un programa que pida un número del 1 al 12 y diga el nombre
-# del mes correspondiente.
+# importe = float(input("Ingrese el importe: "))
+# formaDePago = input("Ingrese el método de pago: \n"
+#                     "1.Contado \n"
+#                     "2.Tarjeta de crédito \n"
+#                     "3.Tarjeta de débito \n")
+
+# if formaDePago == "1":
+#     descuento = importe * 0.1
+#     print(f'El importe es {importe}')
+#     print(f'El descuento es {descuento}')
+#     print(f'El total a pagar es {importe - descuento}')
+# elif formaDePago == "2":
+#     interes = importe * 0.1
+#     print(f'El importe es {importe}')
+#     print(f'El interés es {interes}')
+#     print(f'El total a pagar es {importe + interes}')
+# elif formaDePago == "3":
+#     descuento = importe * 0.05
+#     print(f'El importe es {importe}')
+#     print(f'El descuento es {descuento}')
+#     print(f'El total a pagar es {importe - descuento}')
+# else:
+#     print("La forma de pago ingresada no es válida.")
+
+# 3. Realice un programa que lea tres números, muestre cuál es el mayor y determine si es par o impar.
+# numero1 = int(input("Ingrese el primer número: "))
+# numero2 = int(input("Ingrese el segundo número: "))
+# numero3 = int(input("Ingrese el tercer número: "))
+
+# if numero1 > numero2 and numero1 > numero3:
+#     print(f"El número {numero1} es mayor que {numero2} y {numero3}")
+#     if numero1 % 2 == 0:
+#         print("Y es par.")
+#     else:
+#         print("Y es impar.")
+# if numero2 > numero1 and numero2 > numero3:
+#     print(f"El número {numero2} es mayor que {numero1} y {numero3}")
+#     if numero2 % 2 == 0:
+#         print("Y es par.")
+#     else:
+#         print("Y es impar.")
+# if numero3 > numero2 and numero3 > numero1:
+#     print(f"El número {numero3} es mayor que {numero2} y {numero1}")
+#     if numero3 % 2 == 0:
+#         print("Y es par.")
+#     else:
+#         print("Y es impar.")
+
+# 4. Confeccione un programa que pida un número del 1 al 7 y diga el día de la semana correspondiente.
+numero = int(input("Ingrese un número del 1 al 7: "))
+
+if numero == 1:
+    print("Es lunes")
+elif numero == 2:
+    print("Es martes")
+elif numero == 3:
+    print("Es miércoles")
+elif numero == 4:
+    print("Es jueves")
+elif numero == 5:
+    print("Es viernes")
+elif numero == 6:
+    print("Es sábado")
+elif numero == 7:
+    print("Es domingo")
+
+# 5. Realice un programa que pida un número del 1 al 12 y diga el nombre del mes correspondiente.
+numero = int(input("Ingrese un número del 1 al 12: "))
+
+if numero == 1:
+    print("Es enero")
+elif numero == 2:
+    print("Es febrero")
+elif numero == 3:
+    print("Es marzo")
+elif numero == 4:
+    print("Es abril")
+elif numero == 5:
+    print("Es mayo")
+elif numero == 6:
+    print("Es junio")
+elif numero == 7:
+    print("Es julio")
+elif numero == 8:
+    print("Es agosto")
+elif numero == 9:
+    print("Es septiembre")
+elif numero == 10:
+    print("Es octubre")
+elif numero == 11:
+    print("Es noviembre")
+elif numero == 12:
+    print("Es diciembre")
