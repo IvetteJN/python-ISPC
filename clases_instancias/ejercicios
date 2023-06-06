@@ -1,0 +1,112 @@
+# Ejercicios sobre clases
+
+# Resolver utilizando clases, método constructor y métodos.
+
+# Clase Rectángulo: Crea una clase Rectangulo que tenga atributos base y altura. Luego, define métodos para calcular el área y el perímetro
+# del rectángulo.
+
+# class Rectangulo:
+#     def __init__(self, base, altura):
+#         self.base = base
+#         self.altura = altura
+
+#     def area(self):
+#         return self.base * self.altura
+
+#     def perimetro(self):
+#         return (self.base * 2) + (self.altura * 2)
+
+
+# base = float(input("Ingrese el valor de la base del rectangulo: "))
+# altura = float(input("Ingrese el valor de la altura del rectangulo:"))
+
+# r = Rectangulo(base, altura)
+
+# print("El área del rectángulo es igual a: ", r.area())
+# print("El perímetro del rectángulo es igual a: ", r.perimetro())
+
+# Clase Estudiante: Crea una clase Estudiante que tenga atributos nombre y edad. Luego, define un método para imprimir la información
+# del estudiante. Realiza 3 instancias de esta clase.
+
+# class Estudiante:
+#     def __init__(self, nombre, edad):
+#         self.nombre = nombre
+#         self.edad = edad
+
+#     def imprimir_datos(self):
+#         print(f'Nombre: {self.nombre} \n Edad: {self.edad}')
+
+
+# estudiante1 = Estudiante("Juan", 35)
+# estudiante2 = Estudiante("Paco", 48)
+# estudiante3 = Estudiante("Pedro", 29)
+
+# print("Datos del estudiante 1: ")
+# estudiante1.imprimir_datos()
+# print("Datos del estudiante 2: ")
+# estudiante2.imprimir_datos()
+# print("Datos del estudiante 3: ")
+# estudiante3.imprimir_datos()
+
+# Clase Libro: Crea una clase Libro que tenga atributos titulo, autor y anio. Luego, define un método para imprimir la información
+# completa del libro.
+
+# class Libro:
+#     def __init__(self, titulo, autor, anio):
+#         self.titulo = titulo
+#         self.autor = autor
+#         self.anio = anio
+
+#     def imprimir_libro(self):
+#         print(
+#             f'Titulo: {self.titulo} \n Autor: {self.autor} \n Año: {self.anio}')
+
+
+# libro1 = Libro("Billy Summers", "Stephen King", "2021")
+
+# print('Libro1: ')
+# libro1.imprimir_libro()
+
+# Clase Calculadora: Crea una clase Calculadora que tenga métodos para realizar operaciones matemáticas básicas, como suma, resta,
+# multiplicación y división. También puedes agregar métodos adicionales según tus necesidades.
+
+# class Calculadora:
+#     def suma(num, num1):
+#         return num + num1
+
+#     def resta(num, num1):
+#         return num - num1
+
+#     def multiplicacion(num, num1):
+#         return num * num1
+
+#     def division(num, num1):
+#         return num / num1
+
+
+# print(Calculadora.suma(15, 25))
+# print(Calculadora.resta(15, 25))
+# print(Calculadora.multiplicacion(15, 25))
+# print(Calculadora.division(15, 25))
+
+
+# Clase Círculo: Crea una clase Circulo que tenga un atributo radio. Luego, define métodos para calcular el área y la circunferencia
+# del círculo.
+
+class Circulo:
+    def __init__(self, radio):
+        self.radio = radio
+
+    def area(self):
+        return 3.14 * self.radio ** 2
+
+    def circunferencia(self):
+        return 2 * 3.14 * self.radio
+
+
+radio = float(input('Ingrese el radio: '))
+
+circuloA = Circulo(radio)
+
+print(f'El área del círculo es {circuloA.area()}')
+print(f'El perímetro del círculo es {circuloA.circunferencia()}')
